@@ -86,7 +86,8 @@ randomBtn.addEventListener('click', function () {
 
 // custom drag
 
-let finalX, initialX
+let initialX
+let finalX
 
 drag.addEventListener('mousedown', function (event) {
   initialX = event.clientX;
