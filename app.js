@@ -38,7 +38,6 @@ const info = document.getElementById('info');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const randomBtn = document.querySelector('.random-btn');
-const container = document.querySelector('.container')
 const drag = document.querySelector('.drag')
 // set starting item
 let currentItem = 0;
@@ -84,6 +83,8 @@ randomBtn.addEventListener('click', function () {
   currentItem = Math.floor(Math.random() * reviews.length);
   showPerson(currentItem);
 });
+
+// custom drag
 
 let finalX, initialX
 
