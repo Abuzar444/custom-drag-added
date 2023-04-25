@@ -89,11 +89,11 @@ randomBtn.addEventListener('click', function () {
 let initialX
 let finalX
 
-drag.addEventListener('mousedown', function (event) {
+drag.addEventListener('mousedown', (event) => {
   initialX = event.clientX;
 });
 
-drag.addEventListener('mouseup', function (event) {
+drag.addEventListener('mouseup', (event) => {
   finalX = event.clientX;
 
   if (initialX > finalX) {
